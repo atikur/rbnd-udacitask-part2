@@ -27,6 +27,26 @@ class UdaciList
     end
     @items.delete_at(index - 1)
   end
+  def filter(item_type)
+    rows = []
+    title = "#{item_type.capitalize} Items"
+    
+    puts "-" * title.length
+    puts title
+    puts "-" * @title.length
+
+    items = @items.select {|item| item.type == item_type}
+
+    if items.count == 0
+      puts "No items found."
+    else
+      items.each_with_index do |item, position|
+        rows << ["#{position + 1}", item.details]
+      end
+      table = Terminal::Table.new :rows => rows
+      puts table
+    end
+  end
   def all
     rows = []
 
