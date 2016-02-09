@@ -27,6 +27,7 @@ class UdaciList
     @items.delete_at(index - 1)
   end
   def all
+    @title = "Untitled List" if !@title
     puts "-" * @title.length
     puts @title
     puts "-" * @title.length
