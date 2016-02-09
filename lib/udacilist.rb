@@ -27,12 +27,16 @@ class UdaciList
     @items.delete_at(index - 1)
   end
   def all
+    rows = []
+
     @title = "Untitled List" if !@title
     puts "-" * @title.length
     puts @title
     puts "-" * @title.length
     @items.each_with_index do |item, position|
-      puts "#{position + 1}) #{item.details}"
+      rows << ["#{position + 1}", item.details]
     end
+    table = Terminal::Table.new :rows => rows
+    puts table
   end
 end
