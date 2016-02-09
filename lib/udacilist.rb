@@ -6,6 +6,7 @@ class UdaciList
     @items = []
   end
   def add(type, description, options={})
+    options[:type] = type
     type = type.downcase
     @items.push TodoItem.new(description, options) if type == "todo"
     @items.push EventItem.new(description, options) if type == "event"

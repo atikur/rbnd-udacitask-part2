@@ -1,6 +1,6 @@
 module Listable
-  def format_description(description)
-    "#{description}".ljust(25)
+  def format_description(description, type)
+    "#{description} (#{type})".ljust(35)
   end
   def format_date(options={})
   	if options[:due]
