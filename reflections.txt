@@ -1,13 +1,31 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+
+I added terminal-table gem as my gem of choice.
+Using the terminal-table gem, I formatted the list items as tabular data.
+
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) Added a new item type EmailItem
+  b) Added a new method to delete all list items
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+
+I spent about 3-4 hours to complete the project.
+
 2. What was the most rewarding challenge you conquered?
+
+Implementing the Listable mixin was most challenging part.
+
 3. What two additional features did you build? Why?
+
+a) EmailIem: It allows user to add email addresses to a list.
+b) Delete all list items: User can delete all list items at once.
+
 4. Where do you still have room to grow?
+
+a) Change priority levels of items
+b) Add completion status to todo items
+c) Filter list items by priority
