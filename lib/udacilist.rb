@@ -28,6 +28,9 @@ class UdaciList
     end
     @items.delete_at(index - 1)
   end
+  def clear
+    @items = []
+  end
   def filter(item_type)
     title = "#{item_type.capitalize} Items"
     print title, @items.select {|item| item.type == item_type}
