@@ -6,6 +6,7 @@ require_relative "lib/listable"
 require_relative "lib/errors"
 require_relative "lib/udacilist"
 require_relative "lib/todo"
+require_relative "lib/email"
 require_relative "lib/event"
 require_relative "lib/link"
 
@@ -31,6 +32,7 @@ new_list.add("event", "Vacation", start_date: "Dec 20", end_date: "Dec 30")
 new_list.add("event", "Life happens")
 new_list.add("link", "https://www.udacity.com/", site_name: "Udacity Homepage")
 new_list.add("link", "http://ruby-doc.org")
+new_list.add("email", "mail@udacity.com", contact_name: "Udacity")
 
 # SHOULD RETURN ERROR MESSAGES
 # ----------------------------

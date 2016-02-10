@@ -11,8 +11,9 @@ class UdaciList
     @items.push TodoItem.new(description, options) if type == "todo"
     @items.push EventItem.new(description, options) if type == "event"
     @items.push LinkItem.new(description, options) if type == "link"
+    @items.push EmailItem.new(description, options) if type == "email"
 
-    if !(type == "todo" || type == "event" || type == "link")
+    if !(type == "todo" || type == "event" || type == "link" || type == "email")
       raise UdaciListErrors::InvalidItemType, "Invalid item type: #{type}"
     end
 
