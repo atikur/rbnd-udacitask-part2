@@ -32,7 +32,13 @@ new_list.add("event", "Vacation", start_date: "Dec 20", end_date: "Dec 30")
 new_list.add("event", "Life happens")
 new_list.add("link", "https://www.udacity.com/", site_name: "Udacity Homepage")
 new_list.add("link", "http://ruby-doc.org")
+
+
+# NEW FEATURES 
+#-------------
 new_list.add("email", "mail@udacity.com", contact_name: "Udacity")
+list.clear
+list.all
 
 # SHOULD RETURN ERROR MESSAGES
 # ----------------------------
